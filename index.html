@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Teachassist Simulator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Subjects</h2>
+      <div id="subject-buttons"></div>
+      <button class="main-button" onclick="addCustomSubject()">Add Subject</button>
+      <button class="main-button" onclick="removeCustomSubject()">Remove Subject</button>
+      <button class="main-button" onclick="showInfo()">Info</button>
+    </div>
+
+    <div class="content">
+      <div id="info" class="hidden">
+        <h3>How to Use:</h3>
+        <ul>
+          <li>Click "Add Subject" to create a new subject.</li>
+          <li>Switch between subjects using the buttons on the left.</li>
+          <li>Add or remove scores and enter culminating and final exam percentages.</li>
+          <li>The average is calculated dynamically.</li>
+        </ul>
+      </div>
+      <div id="subjects-container"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
